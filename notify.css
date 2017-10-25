@@ -1,0 +1,70 @@
+.notify-container {
+    width: 300px;
+    height: 100px;
+    border: 1px solid rgb(163, 158, 158);
+    border-radius: 8px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    /* display: none; */
+    -webkit-animation: first 0.3s;
+}
+
+@-moz-keyframes first {
+    from {
+        top: 10px;
+        right: 15px;
+    }
+    to {
+        top: 30px;
+        right: 15px
+    }
+}
+
+
+/* 增加动态样式 */
+
+.notify-title {
+    border-bottom: 1px solid rgb(163, 158, 158);
+    text-align: center;
+}
+
+.notify-content {
+    padding-left: 11px;
+}
+
+#close {
+    background: rgb(250, 248, 245) repeat scroll 0 0;
+    border-radius: 12px;
+    color: rgba(11, 14, 11, 0.624);
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    width: 23px;
+}
+
+#close::after {
+    content: "\2718";
+}
+
+#close {
+    right: -4px;
+    top: -4px;
+    position: absolute;
+}
+
+.btnout {
+    padding: 5px 5px;
+    background: #cecaca;
+    color: rgb(12, 9, 9);
+    float: right;
+    margin-top: 11px;
+    padding: 2px;
+    text-decoration: none;
+    margin-right: 2px;
+}
+
+.notify-containe.move {
+    left: 10px;
+    opacity: 1;
+}
