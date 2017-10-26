@@ -68,3 +68,8 @@
     left: 10px;
     opacity: 1;
 }
+
+.btnout:hover {
+    background: rgba(192, 183, 148, 0.897)
+    /*  鼠标悬停变色 */
+}
